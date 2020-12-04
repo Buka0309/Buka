@@ -2,6 +2,11 @@ var isGameOver;
 var activePlayer;
 var scores;
 var roundScore;
+var start;
+function start(){
+  alert( " Сайн байна уу? Dice game тоглох дүрэм 1. Шоог шидээд 1 буулгасан тохиолдолд тоглоомын ээлж дараачийн тоглогчид шилжих болно. 2. Таны оноо 100 болсон тохиолдолд ялагч болно. 3. Шоог хаяад гарсан тоог оноон дээрээ нэмэхийн тулд hold товчийг дарна. Гэхдээ тоглоомын ээлж дараачийн тоглогчид шилжинэ гэдгийг анхаараарай. Have fun")
+}
+start()
 var diceDom = document.querySelector(".dice");
 initGame();
 function initGame() {
