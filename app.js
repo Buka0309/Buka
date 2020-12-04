@@ -46,7 +46,7 @@ document.querySelector(".btn-hold").addEventListener("click", function () {
     scores[activePlayer] = scores[activePlayer] + roundScore;
     document.getElementById("score-" + activePlayer).textContent =
       scores[activePlayer];
-    if (scores[activePlayer] >= 20) {
+    if (scores[activePlayer] >= 100) {
       isGameOver = false;
       document.getElementById("name-" + activePlayer).textContent =
         "Yeah, WINNER";
@@ -59,8 +59,6 @@ document.querySelector(".btn-hold").addEventListener("click", function () {
     } else {
       switchToNextPlayer();
     }
-
-    switchToNextPlayer();
   } else {
     alert("Тоглоом дууссан байна. New game товчийг дарна уу.");
   }
